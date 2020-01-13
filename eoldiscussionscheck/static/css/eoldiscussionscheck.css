@@ -1,0 +1,9 @@
+/* CSS for EolDiscussionCheckXBlock */
+
+.eoldiscussionscheck_block .count {
+    font-weight: bold;
+}
+
+.eoldiscussionscheck_block p {
+    cursor: pointer;
+}
