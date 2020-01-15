@@ -1,0 +1,16 @@
+{% load i18n %}
+<div class="eoldiscussionscheck_block author">
+    <div class="alert alert-info">
+        <p>{% trans 'El estado de participación del estudiante se mostrará únicamente en el LMS.' %}</p>
+    </div>
+</div>
+<div class="eoldiscussionscheck_block author">
+    <h1>Configuraciones del componente:</h1><br/>
+    {% if discussion_id %}
+        <p>{% trans 'Se ha asociado el siguiente id de foro: ' %} <strong>{{ discussion_id }}</strong></p>
+        <p>{% trans 'Cantidad de participaciones mínimas: ' %} <strong>{{ min_participation }}</strong></p>
+    {% else %}
+        <p class="empty">{% trans 'Aún <u>no</u> se ha asociado un id de foro.' %}</p>
+    {% endif %}
+    
+</div>

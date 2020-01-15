@@ -1,9 +1,22 @@
-/* CSS for EolDiscussionCheckXBlock */
-
-.eoldiscussionscheck_block .count {
-    font-weight: bold;
+.eoldiscussionscheck_block.author {
+    font-style: italic;
 }
 
-.eoldiscussionscheck_block p {
-    cursor: pointer;
+.eoldiscussionscheck_block.author .alert {
+    position: relative;
+    padding: .75rem 1.25rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    margin-bottom: 1em;
+}
+
+.eoldiscussionscheck_block.author .alert-info {
+    background-color: #d9edf7;
+    border-color: #bcdff1;
+    color: #31708f !important;
+}
+
+.eoldiscussionscheck_block.author .empty {
+    color: #e6392de3;
+    font-weight: bold;;
 }
